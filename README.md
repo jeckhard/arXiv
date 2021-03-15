@@ -1,7 +1,6 @@
 # arXiv
 
-Tools to analyse the arXiv data set
-Supports dense neural networks and XGBoost
+Tools to analyse the arXiv data set supporting dense neural networks and XGBoost
 
 In order to use the models in Models.py it is necessary to
 
