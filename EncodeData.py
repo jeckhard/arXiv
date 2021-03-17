@@ -1,5 +1,11 @@
 """
-Package to encode arXiv titles using the universal sentence encoder
+Module to encode arXiv titles using the universal sentence encoder
+Starting with the 'arxiv-cleaned.csv' file write the 'arxiv-encoded-full.csv' file
+
+
+Functions:
+----------
+encodeTitle : Encode the 'title' column of a dataframe using the universal sentence encoder
 """
 
 import numpy as np

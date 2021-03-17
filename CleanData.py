@@ -1,11 +1,18 @@
 """
-Package to load in the arXiv metadata and clean it.
+Module to load in the arXiv metadata and clean it.
 Operations carried out:
 - load in the 'id', 'title' and 'categories' attributes from 'arxiv-metadata.json'
 - clean the categories to only contain 'cs', 'physics', 'math' and 'other'
 - add a label for each category and encode it into a boolean, 'other' is dropped
 - clean the title by removing new lines
 - write the data to 'arxiv-cleaned.csv'
+
+Functions:
+----------
+loadLinesjson : Loads in part of a .json file
+cleanCategories : Cleans arXiv categories to 'cs', 'physics', 'math' and 'other'
+addCats : Add category labels to a data set
+cleanTitles : Remove new lines from a title
 """
 
 

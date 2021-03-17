@@ -1,3 +1,16 @@
+"""
+Module making definitions to train multiple different models and functions to plot the results
+
+Functions:
+----------
+createArxivData : Create subset of training and cv data from the encoded arXiv data set
+xgboost : Trains an XGBoost model for each label for the arXiv data set
+denseNN : Trains a Keras dense NN for each label for the arXiv data set
+resultsDifferentK : Trains a model for different values of k and different labels and evaluates it on train and test data.
+plotDifferentK : Plot measures for a model, given a different amount of training data
+
+"""
+
 import pandas as pd
 import sklearn
 from sklearn.model_selection import train_test_split
